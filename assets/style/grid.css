@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: bisque;
+    border: 1px solid black;
+}
+.grid__container{
+    display: grid;
+    grid-template-columns: 25% 300px 25% 1fr;
+    grid-template-rows: repeat(4,300px);
+}
+.block:nth-child(5){
+    background: green;
+    grid-row: span 2;
+    grid-column: span 2;
+}
